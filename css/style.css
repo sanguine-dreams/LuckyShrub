@@ -1,0 +1,122 @@
+body {
+    background-color: #F7FFE5 !important;
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "head head"
+        "nav nav"
+
+        "main  main"
+
+        "footer  footer";
+
+    grid-template-rows: none;
+    grid-template-columns: none;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    gap: 1rem;
+}
+
+
+header {
+    grid-area: head;
+
+}
+
+#header-logo {
+    height: 7rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    top: 0;
+    position: sticky;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: nav;
+    background-color: #26877f;
+}
+
+h1 {
+    font-family: 'Lilita One', cursive;
+    color: #26877f !important;
+}
+
+p {
+    font-family: 'Concert One', cursive;
+    color: #1c635d
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    margin: 1rem;
+}
+
+.row1 {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.row2 {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    background-color: #26877f;
+
+}
+
+#footer-logo {
+    height: 4rem;
+}
+
+#contact {
+    display: grid;
+    font-family: 'Lilita One', cursive;
+    color: #F7FFE5;
+}
+
+nav a {
+    font-family: 'Lilita One', cursive;
+    letter-spacing: 1px;
+    color: #F7FFE5;
+    text-decoration: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+nav a:link {
+    color: #F7FFE5;
+    text-decoration: none;
+}
+
+
+nav a:visited {
+    color: #F7FFE5;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #E1ECC8;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: #F7FFE5;
+    text-decoration: none;
+}
